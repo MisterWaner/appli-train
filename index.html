@@ -3,19 +3,44 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./style.css">
     <title>Appli train</title>
   </head>
 
   <body>
-    <div class="form">
-      <label for="train">N° de train : </label>
-      <input type="text" id="train" name="train" required number minlength="4" maxlength="6" size="10">
-      <label for="origin">Gare de départ : </label>
-      <input type="text" name="origin" id="originStation">
-      <label for="destination">Gare de destination : </label>
-      <input type="text" name="destination" id="destinationStation">
+    <header>
+      <h1>CHIFFRES EML</h1>
+    </header>
+    <div class="section">
+      <div class="form">
+        <label for="train">N° de train : </label>
+        <input type="number" id="train" name="train" placeholder="n° de train" required>
+        <label for="origin">Gare de départ : </label>
+        <input type="text" name="origin" id="originStation" placeholder="Gare de départ" required>
+        <label for="destination">Gare de destination : </label>
+        <input type="text" name="destination" id="destinationStation" placeholder="Gare de destination" required>
+        <div class="mission">
+          <label for="mission">Mission : </label>
+          <input type="checkbox" name="mission" id="accueilDepart">Accueil Départ
+          <input type="checkbox" name="mission" id="filtrage">Filtrage
+          <input type="checkbox" name="mission" id="accueilArrivee">Accueil Arrivée
+          <input type="checkbox" name="mission" id="situationPerturbee">Situation Perturbée 
+        </div>
+        <label for="passengers">Nombre de voyageurs : </label>
+        <input type="number" name="passengers" id="passengers" placeholder="Nombre de voyageurs" required>
+        <label for="sansBillet">Nombre de personne sans billet : </label>
+        <input type="number" name="sansBillet" id="sansBillet" placeholder="Sans billet" required>
+        <label for="achat">Nombre de rachat</label>
+        <input type="number" name="achat" id="achat" placeholder="Rachat de billet" required>
+        <label for="bnc">Billet non composté : </label>
+        <input type="number" name="bnc" id="bnc" placeholder="Nombre de BNC" required>
+        <input type="submit" value="Valider">
+      </div>
     </div>
+    <footer>
+    </footer>
+    
     <script src="./script.js"></script>
   </body>
 </html>
