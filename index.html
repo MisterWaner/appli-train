@@ -1,1 +1,21 @@
 <!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Appli train</title>
+  </head>
+
+  <body>
+    <div class="form">
+      <label for="train">N° de train : </label>
+      <input type="text" id="train" name="train" required number minlength="4" maxlength="6" size="10">
+      <label for="origin">Gare de départ : </label>
+      <input type="text" name="origin" id="originStation">
+      <label for="destination">Gare de destination : </label>
+      <input type="text" name="destination" id="destinationStation">
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
