@@ -19,14 +19,31 @@
         <label for="origin">Gare de départ : </label>
         <input type="text" name="origin" id="originStation" placeholder="Gare de départ" required>
         <label for="destination">Gare de destination : </label>
-        <input type="text" name="destination" id="destinationStation" placeholder="Gare de destination" required>
+        <input type="text" name="destination" id="destStation" placeholder="Gare de destination" required>
         <div class="mission">
-          <label for="mission">Mission : </label>
-          <input type="checkbox" name="mission" id="accueilDepart">Accueil Départ
-          <input type="checkbox" name="mission" id="filtrage">Filtrage
-          <input type="checkbox" name="mission" id="accueilArrivee">Accueil Arrivée
-          <input type="checkbox" name="mission" id="situationPerturbee">Situation Perturbée 
+          <fieldset>
+            <legend>Mission :</legend>
+            <div>
+              <input type="radio" name="mission" id="accueilDepart" value="accueilDepart">Accueil Départ
+            </div>
+            <div>
+              <input type="radio" name="mission" id="filtrage" value="filtrage">Filtrage
+            </div>
+            <div>
+              <input type="radio" name="mission" id="accueilArrivee" value="accueilArrivee">Accueil Arrivée
+            </div>
+            <div>
+              <input type="radio" name="mission" id="situationPerturbee" value="situationPerturbee">Situation Perturbée
+            </div>
+            <div>
+              <input type="radio" name="mission" id="autre" value="autre">Autre
+            </div>
+          </fieldset>
         </div>
+        <button id="button1">Valider</button>
+      </div>
+    
+      <div class="formStat" id="formStat" style="display:none">
         <label for="passengers">Nombre de voyageurs : </label>
         <input type="number" name="passengers" id="passengers" placeholder="Nombre de voyageurs" required>
         <label for="sansBillet">Nombre de personne sans billet : </label>
@@ -35,7 +52,14 @@
         <input type="number" name="achat" id="achat" placeholder="Rachat de billet" required>
         <label for="bnc">Billet non composté : </label>
         <input type="number" name="bnc" id="bnc" placeholder="Nombre de BNC" required>
-        <input type="submit" value="Valider">
+        <label for="comment">Commentaires : </label>
+        <textarea id="comment1" name="comment" rows="10" cols="30"></textarea>
+        <button>Valider</button>
+      </div>
+      <div class="comment" id="commentAll">
+        <label for="comment">Commentaires : </label>
+        <textarea id="comment2" name="comment" rows="10" cols="30"></textarea>
+        <button>Valider</button>
       </div>
     </div>
     <footer>

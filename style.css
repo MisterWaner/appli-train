@@ -1,18 +1,27 @@
 html, body {
-  background: linear-gradient(45deg, purple, red);
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, purple, red);
   color: white;
   font-family: 'Nunito', sans-serif;
 }
 
+h1 {
+  text-align: center;
+}
+
 .section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .mission {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .form {
@@ -20,5 +29,150 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 600px;
+  width: 300px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.formStat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  
+}
+
+button {
+  margin: 10px;
+}
+
+@media only screen and (max-width: 959px) {
+  h1 {
+    text-align: center;
+  }
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .formStat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 25px;
+    
+  }
+
+  .comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 25px;
+    
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  h1 {
+    text-align: center;
+  }
+  
+  .section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .formStat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    
+  }
+
+  .comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+   
+  }
 }
