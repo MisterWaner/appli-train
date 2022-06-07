@@ -24,44 +24,62 @@
           <fieldset>
             <legend>Mission :</legend>
             <div>
-              <input type="radio" name="mission" id="accueilDepart" value="accueilDepart">Accueil Départ
+              <input type="radio" name="mission" id="accueilDepart" value="accueilDepart" onclick="clicked()">Accueil Départ
             </div>
             <div>
-              <input type="radio" name="mission" id="filtrage" value="filtrage">Filtrage
+              <input type="radio" name="mission" id="filtrageDepart" value="filtrageDepart" onclick="filtrageClicked()">Filtrage Départ
             </div>
             <div>
-              <input type="radio" name="mission" id="accueilArrivee" value="accueilArrivee">Accueil Arrivée
+              <input type="radio" name="mission" id="filtrageArrivee" value="filtrageArrivee" onclick="filtrageArriveeClicked()">Filtrage Arrivée
             </div>
             <div>
-              <input type="radio" name="mission" id="situationPerturbee" value="situationPerturbee">Situation Perturbée
+              <input type="radio" name="mission" id="accueilArrivee" value="accueilArrivee" onclick="clicked()">Accueil Arrivée
             </div>
             <div>
-              <input type="radio" name="mission" id="autre" value="autre">Autre
+              <input type="radio" name="mission" id="situationPerturbee" value="situationPerturbee" onclick="clicked()">Situation Perturbée
+            </div>
+            <div>
+              <input type="radio" name="mission" id="other" value="autre" onclick="clicked()">Autre
             </div>
           </fieldset>
+          <form class="formStat" id="formStat" style="display:none">
+            <label for="passengers">Nombre de voyageurs : </label>
+            <input type="number" name="passengers" id="passengers" placeholder="Nombre de voyageurs" required>
+            <label for="sansBillet">Nombre de personne sans billet : </label>
+            <input type="number" name="sansBillet" id="sansBillet" placeholder="Sans billet" required>
+            <label for="achat">Nombre de rachat</label>
+            <input type="number" name="achat" id="achat" placeholder="Rachat de billet" required>
+            <label for="bnc">Billet non composté : </label>
+            <input type="number" name="bnc" id="bnc" placeholder="Nombre de BNC" required>
+            <label for="comment">Commentaires : </label>
+            <textarea id="comment1" name="comment" rows="10" cols="30"></textarea>
+            <button id="button1"><a href="./tableau.html">Valider</a></button>
+          </form>
+          <form class="formStat" id="formStatArrivee" style="display:none">
+            <label for="passengers">Nombre de voyageurs : </label>
+            <input type="number" name="passengers" id="travellers" placeholder="Nombre de voyageurs" required>
+            <label for="sansBillet">Nombre de personne sans billet : </label>
+            <input type="number" name="sansBillet" id="ticketLess" placeholder="Sans billet" required>
+            <label for="bnc">Billet non composté : </label>
+            <input type="number" name="bnc" id="notStamped" placeholder="Nombre de BNC" required>
+            <label for="achat">Nombre de CC délivré</label>
+            <input type="number" name="achat" id="buying" placeholder="CC délivré" required>
+            <label for="amende">Nombre de procès verbaux : </label>
+            <input type="number" name="amende" id="amende" placeholder="Procès Verbaux" required>
+            <label for="comment">Commentaires : </label>
+            <textarea id="comment2" name="comment" rows="10" cols="30"></textarea>
+            <button id="button2"><a href="./tableau.html">Valider</a></button>
+          </form>
+          <div class="comment" id="commentAll" style="display:none">
+            <label for="comment">Commentaires : </label>
+            <textarea id="comment3" name="comment" rows="10" cols="30"></textarea>
+            <button id="button3">Valider</button>
+          </div>
         </div>
-        <button id="button1">Valider</button>
       </div>
-    
-      <div class="formStat" id="formStat" style="display:none">
-        <label for="passengers">Nombre de voyageurs : </label>
-        <input type="number" name="passengers" id="passengers" placeholder="Nombre de voyageurs" required>
-        <label for="sansBillet">Nombre de personne sans billet : </label>
-        <input type="number" name="sansBillet" id="sansBillet" placeholder="Sans billet" required>
-        <label for="achat">Nombre de rachat</label>
-        <input type="number" name="achat" id="achat" placeholder="Rachat de billet" required>
-        <label for="bnc">Billet non composté : </label>
-        <input type="number" name="bnc" id="bnc" placeholder="Nombre de BNC" required>
-        <label for="comment">Commentaires : </label>
-        <textarea id="comment1" name="comment" rows="10" cols="30"></textarea>
-        <button>Valider</button>
-      </div>
-      <div class="comment" id="commentAll">
-        <label for="comment">Commentaires : </label>
-        <textarea id="comment2" name="comment" rows="10" cols="30"></textarea>
-        <button>Valider</button>
-      </div>
+      
     </div>
+    
     <footer>
     </footer>
     

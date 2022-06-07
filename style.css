@@ -4,6 +4,7 @@ html, body {
   background: linear-gradient(to right, purple, red);
   color: white;
   font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -11,10 +12,11 @@ h1 {
 }
 
 .section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
+  position: relative;
+  width: 95%;
+  border: 2px solid white;
+  border-radius: 5px;
 }
 
 .mission {
@@ -29,9 +31,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 300px;
-  border: 2px solid white;
-  border-radius: 5px;
   padding: 10px;
 }
 
@@ -40,9 +39,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  border: 2px solid white;
-  border-radius: 5px;
   padding: 10px;
   
 }
@@ -52,9 +48,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  border: 2px solid white;
-  border-radius: 5px;
   padding: 10px;
   
 }
@@ -62,6 +55,29 @@ h1 {
 button {
   margin: 10px;
 }
+
+
+table {
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: center;
+  border-collapse: collapse;
+  
+}
+
+th {
+  text-align: center;
+}
+td {
+  padding: 5px;
+}
+
+table, td, tr {
+  text-align: center;
+}
+
+
 
 @media only screen and (max-width: 959px) {
   h1 {
@@ -73,7 +89,12 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 50px;
+    width: 80%;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 25px;
+    
   }
   
   .mission {
@@ -88,10 +109,8 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 300px;
-    border: 2px solid white;
-    border-radius: 5px;
-    padding: 10px;
+   
+    padding: 5px;
   }
 
   .formStat {
@@ -99,10 +118,7 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 300px;
-    border: 2px solid white;
-    border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
     margin-top: 25px;
     
   }
@@ -112,12 +128,31 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 300px;
-    border: 2px solid white;
-    border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
     margin-top: 25px;
     
+  }
+
+
+  
+  table {
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: center;
+    border-collapse: collapse;
+
+  }
+  
+  th {
+    text-align: center;
+  }
+  td {
+    padding: 5px;
+  }
+  
+  table, td, tr {
+    text-align: center;
   }
 }
 
@@ -127,11 +162,13 @@ button {
   }
   
   .section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px;
+    display: block;
+    position: relative;
+    width: 95%;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px; 
   }
   
   .mission {
@@ -146,10 +183,7 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 300px;
-    border: 2px solid white;
-    border-radius: 5px;
-    padding: 10px;
+    
   }
 
   .formStat {
@@ -157,11 +191,8 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 400px;
-    border: 2px solid white;
-    border-radius: 5px;
     padding: 10px;
-    
+    margin-right: 10px;
   }
 
   .comment {
@@ -169,10 +200,27 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 400px;
+    padding: 20px;
+   
+  }
+  
+  table {
     border: 2px solid white;
     border-radius: 5px;
-    padding: 10px;
-   
+    text-align: center;
+    vertical-align: center;
+    border-collapse: collapse;
+  }
+  
+  th {
+    text-align: center;
+  }
+  td {
+    padding: 5px;
+  }
+  
+  td, tr {
+    text-align: center;
+    border: 1px solid white;
   }
 }
